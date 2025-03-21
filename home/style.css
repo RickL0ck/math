@@ -1,0 +1,397 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_vert');*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Funnel+Sans:ital@0;1&family=Lato:wght@300;400;700;900&display=swap');
+
+/* FONTS*/
+.dm-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.lato-thin{
+    font-family: 'Lato', serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.lato-black {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.funnel-regular {
+    font-family: "Funnel Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.funnel-medium {
+    font-family: "Funnel Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* FONTS*/
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    color: black;
+    /* background: linear-gradient(45deg, rgb(13, 37, 104)0%, rgb(4, 18, 58)100%); */
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+:root{
+    --headermcolor: rgb(246, 58, 58);
+    --headermcolorhover: rgba(246, 58, 58, 0.655);
+}
+
+/* Link Buttons */
+
+a.empty{                        /* Empty Button */
+    text-decoration: none;
+
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: normal;
+
+    color: lightslategray;
+
+    padding: 0.5rem 0.6rem;
+
+    border: 3px solid lightslategray;
+    border-radius: 100pt;
+}
+
+a.empty:hover{
+    text-decoration: none; 
+    color: rgb(192, 9, 9);
+    border: 3px solid rgb(192, 9, 9);
+}
+
+/* Filled Button */
+
+a.filled{
+    text-decoration: none;
+
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    
+    color: lightslategray;
+
+    padding: 0.5rem 0.6rem;
+
+    border: 3px solid lightslategray;
+    border-radius: 100pt;
+    background-color: lightslategray;
+}
+
+a.filled:hover{
+    color:aliceblue;
+    border: 3px solid rgb(224, 25, 25);
+    background-color: rgb(224, 25, 25);
+}
+
+/* Default Link Buttons */
+
+.link{
+    text-decoration: none;
+    color: lightslategray;
+}
+
+.link:hover{
+    color: rgb(221, 30, 30);
+}
+
+/* Header Buttons */
+
+.mainb{               
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+
+    text-decoration: none;
+
+    /*Fonts*/
+    font-family: "Funnel Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 20pt;
+
+    color: rgb(240, 248, 255);
+
+    /*conf*/
+    padding:1rem 1rem 1rem 0;
+
+    height: 2rem;
+
+    border: 0.5px solid var(--headermcolor);
+    border-radius: 5pt;
+    background: var(--headermcolor);
+}
+
+.mainicon{
+    display: inline-flex;
+    margin: 0;
+    height: 2rem;
+    width: 4rem;
+    object-fit: contain;
+}
+
+.mainb:hover{
+    background: var(--headermcolorhover);
+    border: 0.5px var(--headermcolorhover);
+}
+
+.divbutton{
+    display: flex;
+    gap: 1rem;
+}
+
+/* Parts of Body */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 3rem 1.5rem 3rem;
+    margin-bottom: 1rem;
+
+    border-bottom: 0.5rem solid rgb(224, 25, 25);
+
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;   
+    font-style: normal;
+    font-size: 50pt;
+
+    color: aliceblue;
+    background-color: rgb(232, 36, 36);
+}
+
+main{
+    flex: 1;
+    padding: 2rem 4rem;
+
+    text-align: center;
+    font-size: 20pt;  
+    
+    position: relative;
+    z-index: 1;    
+}
+
+footer{ 
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 1rem 4rem 1rem 4rem;
+    text-align: center;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.625);
+}
+
+/* specifications */
+
+.title{
+    color: aliceblue;
+    text-align: left;
+}
+
+div.text{
+    padding: 1rem 0.5rem;
+}
+
+img{
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Background Image */
+
+.parallax {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-image: url('home/ferrariback.jpg'); 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px); 
+}
+
+/* Dropdown Menus */
+
+.dropdown{   /* Div that stores the followed buttons inside */
+    position: relative;
+}
+
+.dropdown-menu{  /* That's the menu that's inside dropdown div */
+    font-size: 20pt;
+    position: absolute;
+    right: 0.5px;
+    top: calc(100% + .5rem);
+    background-color: var(--headermcolor);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .mainb + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Informational Grid */
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: .5rem;
+
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+
+    z-index: 10;
+}
+
+.drop-headings{
+    font-family: "Funnel Sans", serif;
+    font-size: 20pt;
+}
+
+.drop-links{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1rem;   
+}
+
+.menulink{
+    font-size: 15pt;
+
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: .5rem;
+    gap: .5rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: .5rem .5rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.menulink:hover {
+    transform: translateX(5px); 
+    color: #ffe66d; 
+}
+
+.menulink:hover .menuicon {
+    transform: scale(1.2);
+}
+
+.menuicon{
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.menu-grid:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Stuff */
+
+@media screen and (max-width: 1350px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mainb {
+        font-size: 0;
+        padding: 0.5rem;
+    }
+
+    .mainb img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .divbutton {
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 0.5rem; 
+        margin-top: 1rem;
+    }
+
+    header h1, header .title {
+        font-size: 6vh;
+        word-break: break-word;
+    }
+
+    .dropdown .mainb{
+        padding: 0.5rem;
+        font-size: 0;
+    }
+
+    .dropdown .mainicon{
+        width: 1%;
+        height: 1%;
+    }
+
+    .dropdown .dropdown-menu{
+        padding: 0.5rem;
+    }
+
+    footer{
+        padding: 1rem;
+        font-size: 14pt;
+    }
+}
+  
